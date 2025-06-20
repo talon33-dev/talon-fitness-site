@@ -32,7 +32,7 @@ header p {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   padding: 2rem 1rem;
 }
@@ -62,15 +62,20 @@ footer {
   background: #222;
 }
 
-.product {
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
   background: #222;
   padding: 1rem;
   border-radius: 5px;
-  margin-top: 1rem;
   text-align: center;
 }
 
-.product img {
+.product-card img {
   max-width: 100%;
   border-radius: 5px;
 }
