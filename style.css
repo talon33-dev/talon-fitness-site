@@ -38,3 +38,17 @@
   0% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.2); opacity: 1; }
   100% { transform: sc
+@media (max-width: 600px) {
+  .btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #talon-merch-store {
+    padding: 1rem;
+  }
+
+  .product-card {
+    padding: 0.5rem;
+  }
+}
