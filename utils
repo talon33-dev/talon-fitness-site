@@ -1,1 +1,8 @@
+const products = [
+  { id: 1, name: "Warrior Lifting Strap", price: "29.99", image: "/images/lifting-strap.jpg" },
+  { id: 2, name: "Talon Tank Top", price: "24.99", image: "/images/tank-top.jpg" },
+  { id: 3, name: "Discipline Hoodie", price: "49.99", image: "/images/hoodie.jpg" }
+];
+
+export default products;
 
