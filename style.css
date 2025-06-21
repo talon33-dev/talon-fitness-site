@@ -51,26 +51,3 @@
   .product-card {
     padding: 0.5rem;
   }
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  background-color: #000000;
-}
-module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
-  ],
-  theme: {
-    extend: {
-      colors: {
-        tan: '#D2B48C',
-        offgrey: '#A9A9A9'
-      }
-    }
-  },
-  plugins: [],
-}
