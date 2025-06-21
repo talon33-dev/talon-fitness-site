@@ -1,1 +1,14 @@
 
+export default function Header() {
+  return (
+    <header className="bg-black text-white p-4 flex justify-between items-center">
+      <h1 className="text-xl font-bold">Talon Warrior Fitness</h1>
+      <nav>
+        <a href="/" className="mr-4 hover:text-tan">Home</a>
+        <a href="/shop" className="mr-4 hover:text-tan">Shop</a>
+        <a href="/about" className="mr-4 hover:text-tan">About</a>
+        <a href="/contact" className="hover:text-tan">Contact</a>
+      </nav>
+    </header>
+  )
+}
