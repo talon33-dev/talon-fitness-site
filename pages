@@ -1,1 +1,57 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HeroBanner from "../components/HeroBanner";
+import ProductCard from "../components/ProductCard";
+import products from "../utils/products";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <HeroBanner />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-black">
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+      <Footer />
+    </>
+  )
+}
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProductCard from "../components/ProductCard";
+import products from "../utils/products";
+
+export default function Shop() {
+  return (
+    <>
+      <Header />
+      <div className="p-8 bg-black text-white">
+        <h2 className="text-2xl font-bold mb-4">Shop</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {products.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </>
+  )
+}
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+export default function Contact() {
+  return (
+    <>
+      <Header />
+      <div className="p-8 bg-black text-white">
+        <h2 className="text-2xl font-bold">Contact Us</h2>
+        <p className="mt-4">Email us at: <a className="text-tan" href="mailto:contact@talonwarriorfitness.com">contact@talonwarriorfitness.com</a></p>
+      </div>
+      <Footer />
+    </>
+  )
+}
 
