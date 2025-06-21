@@ -19,3 +19,21 @@ export default function Footer() {
     </footer>
   )
 }
+export default function HeroBanner() {
+  return (
+    <div className="bg-black text-tan py-16 text-center">
+      <h2 className="text-3xl font-bold">Unleash Your Power</h2>
+      <p className="mt-2">Train like a warrior. Conquer like a king.</p>
+      <button className="mt-4 bg-tan text-black px-6 py-2 font-bold hover:bg-white">Shop Now</button>
+    </div>
+  )
+}
+export default function ProductCard({ product }) {
+  return (
+    <div className="border border-tan p-4">
+      <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+      <h3 className="mt-2 text-white font-bold">{product.name}</h3>
+      <p className="text-tan">${product.price}</p>
+    </div>
+  )
+}
