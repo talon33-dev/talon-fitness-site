@@ -19,6 +19,7 @@ export default function Footer() {
     </footer>
   )
 }
+<img src="assets/wraith-logo.png" alt="Wraith Talon Fitness Logo" style="width: 300px;"/>
 export default function HeroBanner() {
   return (
     <div className="bg-black text-tan py-16 text-center">
