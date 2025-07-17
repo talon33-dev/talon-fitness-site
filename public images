@@ -1,1 +1,4 @@
+git add assets/wraith-logo.png
+git commit -m "Add Wraith Talon logo"
+git push origin main
 
